@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1790060207746,
+    "description" : "",
+    "identifier" : "api-ingestion-pattern",
+    "lastModifiedTimestamp" : 1790060207746,
+    "name" : "api-ingestion-pattern",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
