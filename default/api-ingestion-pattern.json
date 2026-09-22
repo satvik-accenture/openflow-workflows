@@ -7,10 +7,6 @@
     "cdcd6810-2748-316d-8bb8-f823f66f1731" : {
       "identifier" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
       "name" : "SnowflakeConnectionService"
-    },
-    "66979c28-9ddb-3d6b-90fc-da3bb40a6b6a" : {
-      "identifier" : "66979c28-9ddb-3d6b-90fc-da3bb40a6b6a",
-      "name" : "JsonRecordSetWriter"
     }
   },
   "flow" : {
@@ -988,7 +984,479 @@
       },
       "zIndex" : 70
     } ],
-    "controllerServices" : [ ],
+    "controllerServices" : [ {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-record-serialization-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2026.9.21.6"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2026.9.17.2"
+        },
+        "type" : "org.apache.nifi.serialization.RecordReaderFactory"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "741986ee-ba61-3d69-91f0-98390476fb89",
+      "name" : "JsonTreeReader_API",
+      "properties" : {
+        "Schema Text" : "${avro.schema}",
+        "Max String Length" : "20 MB",
+        "Starting Field Strategy" : "ROOT_NODE",
+        "Schema Access Strategy" : "infer-schema",
+        "Schema Name" : "${schema.name}",
+        "Schema Application Strategy" : "SELECTED_PART",
+        "Parsing Strategy" : "STANDARD"
+      },
+      "propertyDescriptors" : {
+        "Schema Branch" : {
+          "displayName" : "Schema Branch",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Branch",
+          "sensitive" : false
+        },
+        "Schema Reference Reader" : {
+          "displayName" : "Schema Reference Reader",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Reference Reader",
+          "sensitive" : false
+        },
+        "Schema Text" : {
+          "displayName" : "Schema Text",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Text",
+          "sensitive" : false
+        },
+        "Starting Field Name" : {
+          "displayName" : "Starting Field Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Starting Field Name",
+          "sensitive" : false
+        },
+        "Max String Length" : {
+          "displayName" : "Max String Length",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Max String Length",
+          "sensitive" : false
+        },
+        "Schema Inference Cache" : {
+          "displayName" : "Schema Inference Cache",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Inference Cache",
+          "sensitive" : false
+        },
+        "Starting Field Strategy" : {
+          "displayName" : "Starting Field Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Starting Field Strategy",
+          "sensitive" : false
+        },
+        "Schema Registry" : {
+          "displayName" : "Schema Registry",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Registry",
+          "sensitive" : false
+        },
+        "Schema Access Strategy" : {
+          "displayName" : "Schema Access Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Access Strategy",
+          "sensitive" : false
+        },
+        "Schema Name" : {
+          "displayName" : "Schema Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Name",
+          "sensitive" : false
+        },
+        "Timestamp Format" : {
+          "displayName" : "Timestamp Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Timestamp Format",
+          "sensitive" : false
+        },
+        "Date Format" : {
+          "displayName" : "Date Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Date Format",
+          "sensitive" : false
+        },
+        "Schema Application Strategy" : {
+          "displayName" : "Schema Application Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Application Strategy",
+          "sensitive" : false
+        },
+        "Schema Version" : {
+          "displayName" : "Schema Version",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Version",
+          "sensitive" : false
+        },
+        "Time Format" : {
+          "displayName" : "Time Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Time Format",
+          "sensitive" : false
+        },
+        "Parsing Strategy" : {
+          "displayName" : "Parsing Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Parsing Strategy",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.json.JsonTreeReader"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "runtime-snowflake-connection-service-nar",
+        "group" : "com.snowflake.openflow.runtime",
+        "version" : "2026.9.21.6"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2026.9.17.2"
+        },
+        "type" : "org.apache.nifi.dbcp.DBCPService"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
+      "name" : "SnowflakeConnectionService_API",
+      "properties" : {
+        "Warehouse" : "QUANTAS_AIRLINE_WH",
+        "Maximum Connections" : "10",
+        "Maximum Lifetime" : "30 minutes",
+        "Schema" : "SOURCE",
+        "Connection Strategy" : "STANDARD",
+        "Connection Timeout" : "30 seconds",
+        "Role" : "QUANTAS_AIRLINE_ADMIN_ROLE",
+        "Idle Timeout" : "10 minutes",
+        "Authentication Strategy" : "SNOWFLAKE_SESSION_TOKEN",
+        "Database Name" : "QUANTAS_AIRLINE_DB",
+        "Network Timeout" : "5 minutes"
+      },
+      "propertyDescriptors" : {
+        "Account" : {
+          "displayName" : "Account",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Account",
+          "sensitive" : false
+        },
+        "Warehouse" : {
+          "displayName" : "Warehouse",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Warehouse",
+          "sensitive" : false
+        },
+        "User" : {
+          "displayName" : "User",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "User",
+          "sensitive" : false
+        },
+        "Maximum Connections" : {
+          "displayName" : "Maximum Connections",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum Connections",
+          "sensitive" : false
+        },
+        "Maximum Lifetime" : {
+          "displayName" : "Maximum Lifetime",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Maximum Lifetime",
+          "sensitive" : false
+        },
+        "Schema" : {
+          "displayName" : "Schema",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema",
+          "sensitive" : false
+        },
+        "Private Key Service" : {
+          "displayName" : "Private Key Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Private Key Service",
+          "sensitive" : false
+        },
+        "Connection Strategy" : {
+          "displayName" : "Connection Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Connection Strategy",
+          "sensitive" : false
+        },
+        "Connection Timeout" : {
+          "displayName" : "Connection Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Connection Timeout",
+          "sensitive" : false
+        },
+        "Role" : {
+          "displayName" : "Role",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Role",
+          "sensitive" : false
+        },
+        "Idle Timeout" : {
+          "displayName" : "Idle Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Idle Timeout",
+          "sensitive" : false
+        },
+        "Authentication Strategy" : {
+          "displayName" : "Authentication Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Authentication Strategy",
+          "sensitive" : false
+        },
+        "Database Name" : {
+          "displayName" : "Database Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Database Name",
+          "sensitive" : false
+        },
+        "Network Timeout" : {
+          "displayName" : "Network Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Network Timeout",
+          "sensitive" : false
+        },
+        "Password" : {
+          "displayName" : "Password",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Password",
+          "sensitive" : true
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "com.snowflake.openflow.runtime.services.snowflake.SnowflakeConnectionService"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-record-serialization-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2026.9.21.6"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2026.9.17.2"
+        },
+        "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "fd1dbcaa-f91d-3d9e-9cf7-5f1655918449",
+      "name" : "JsonRecordSetWriter_API",
+      "properties" : {
+        "Schema Text" : "${avro.schema}",
+        "Allow Scientific Notation" : "false",
+        "Compression Level" : "1",
+        "Output Grouping" : "output-array",
+        "Schema Access Strategy" : "inherit-record-schema",
+        "Schema Name" : "${schema.name}",
+        "Pretty Print JSON" : "false",
+        "Suppress Null Values" : "never-suppress",
+        "Schema Write Strategy" : "no-schema",
+        "Serialized JSON Input Handling" : "ENABLED",
+        "Compression Format" : "none",
+        "Timestamp Representation" : "AUTO"
+      },
+      "propertyDescriptors" : {
+        "Schema Branch" : {
+          "displayName" : "Schema Branch",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Branch",
+          "sensitive" : false
+        },
+        "Schema Reference Reader" : {
+          "displayName" : "Schema Reference Reader",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Reference Reader",
+          "sensitive" : false
+        },
+        "Schema Text" : {
+          "displayName" : "Schema Text",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Text",
+          "sensitive" : false
+        },
+        "Allow Scientific Notation" : {
+          "displayName" : "Allow Scientific Notation",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Allow Scientific Notation",
+          "sensitive" : false
+        },
+        "Compression Level" : {
+          "displayName" : "Compression Level",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Compression Level",
+          "sensitive" : false
+        },
+        "Output Grouping" : {
+          "displayName" : "Output Grouping",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Output Grouping",
+          "sensitive" : false
+        },
+        "Schema Registry" : {
+          "displayName" : "Schema Registry",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Registry",
+          "sensitive" : false
+        },
+        "Schema Access Strategy" : {
+          "displayName" : "Schema Access Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Access Strategy",
+          "sensitive" : false
+        },
+        "Schema Name" : {
+          "displayName" : "Schema Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Name",
+          "sensitive" : false
+        },
+        "Timestamp Format" : {
+          "displayName" : "Timestamp Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Timestamp Format",
+          "sensitive" : false
+        },
+        "Date Format" : {
+          "displayName" : "Date Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Date Format",
+          "sensitive" : false
+        },
+        "Pretty Print JSON" : {
+          "displayName" : "Pretty Print JSON",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Pretty Print JSON",
+          "sensitive" : false
+        },
+        "Suppress Null Values" : {
+          "displayName" : "Suppress Null Values",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Suppress Null Values",
+          "sensitive" : false
+        },
+        "Schema Write Strategy" : {
+          "displayName" : "Schema Write Strategy",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Write Strategy",
+          "sensitive" : false
+        },
+        "Serialized JSON Input Handling" : {
+          "displayName" : "Serialized JSON Input Handling",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Serialized JSON Input Handling",
+          "sensitive" : false
+        },
+        "Compression Format" : {
+          "displayName" : "Compression Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Compression Format",
+          "sensitive" : false
+        },
+        "Schema Cache" : {
+          "displayName" : "Schema Cache",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Cache",
+          "sensitive" : false
+        },
+        "Schema Version" : {
+          "displayName" : "Schema Version",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Schema Version",
+          "sensitive" : false
+        },
+        "Time Format" : {
+          "displayName" : "Time Format",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Time Format",
+          "sensitive" : false
+        },
+        "Timestamp Representation" : {
+          "displayName" : "Timestamp Representation",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Timestamp Representation",
+          "sensitive" : false
+        },
+        "Schema Reference Writer" : {
+          "displayName" : "Schema Reference Writer",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "Schema Reference Writer",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.json.JsonRecordSetWriter"
+    } ],
     "defaultBackPressureDataSizeThreshold" : "1 GB",
     "defaultBackPressureObjectThreshold" : 10000,
     "defaultFlowFileExpiration" : "0 sec",
@@ -1001,10 +1469,6 @@
       "cdcd6810-2748-316d-8bb8-f823f66f1731" : {
         "identifier" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
         "name" : "SnowflakeConnectionService"
-      },
-      "66979c28-9ddb-3d6b-90fc-da3bb40a6b6a" : {
-        "identifier" : "66979c28-9ddb-3d6b-90fc-da3bb40a6b6a",
-        "name" : "JsonRecordSetWriter"
       }
     },
     "flowFileConcurrency" : "UNBOUNDED",
@@ -1736,7 +2200,7 @@
       },
       "properties" : {
         "Max Batch Size" : "1",
-        "Connection Pooling Service" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
+        "Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Max Content Reference Size" : "20 MB",
         "Result Set Output Strategy" : "ROWS_UPDATED",
         "SQL" : "INSERT INTO IDENTIFIER('${DESTINATION_TABLE_NAME}')\n(\n    KEY,\n    PAYLOAD\n)\nWITH SOURCE_XML AS\n(\n    SELECT PARSE_XML('${flowfile_content}') AS XML_DOC\n),\nPARENT_XML AS\n(\n    SELECT XMLGET(\n        XML_DOC,\n        SPLIT_PART('${PAYLOAD_ARRAY_NAME}', '.', 1)\n    ) AS PARENT_ELEMENT\n    FROM SOURCE_XML\n)\nSELECT\n    GET(\n        XMLGET(\n            F.VALUE,\n            SPLIT_PART('${ARRAY_ID}', '.', 1)\n        ),\n        SPLIT_PART('${ARRAY_ID}', '.', 2)\n    )::VARCHAR AS KEY,\n    F.VALUE AS PAYLOAD\nFROM PARENT_XML,\nLATERAL FLATTEN(\n    INPUT => GET(PARENT_ELEMENT, '$')\n) F\nWHERE GET(F.VALUE, '@')::VARCHAR =\n      SPLIT_PART('${PAYLOAD_ARRAY_NAME}', '.', 2);"
@@ -2033,7 +2497,7 @@
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
         "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ERROR,\n    ATTRIBUTES\n)\nSELECT \n    '${uuid}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP),\n    FALSE,\n    NULL,\n    COALESCE(NULLIF('${executesql.error.message:replaceAll(\"'\",\"''\")}',''),NULLIF(CONCAT('${invokehttp.java.exception.class:replaceAll(\"'\",\"''\")}',' : ','${invokehttp.java.exception.message:replaceAll(\"'\",\"''\")}'),':'),NULLIF('${error.message:replaceAll(\"'\",\"''\")}','')),\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))",
-        "Database Connection Pooling Service" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
+        "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "Fetch Size" : "0",
         "Output Batch Size" : "0",
@@ -2390,12 +2854,12 @@
         "Max Wait Time" : "0 seconds",
         "SQL Query" : "SELECT\n    KEY,\n    BASE_URL,\n    COALESCE(WATERMARK,'2026-09-07T00:00:00Z') AS WATERMARK,\n    ADDITIONAL_PARAMS:OFFSET_START::INT AS OFFSET,\n    ADDITIONAL_PARAMS:PAGE_SIZE::INT AS PAGE_SIZE,\n    ADDITIONAL_PARAMS:ARRAY_NAME::STRING AS ARRAY_NAME,\n    ADDITIONAL_PARAMS:ARRAY_ID::STRING AS ARRAY_ID,\n    ADDITIONAL_PARAMS:BATCH_SIZE::INT AS BATCH_SIZE,\n    ADDITIONAL_PARAMS:FILE_FORMAT::STRING AS FILE_FORMAT,\n    ADDITIONAL_PARAMS:DATA_TYPE::STRING AS DATA_TYPE,\n    TO_CHAR(CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP),'YYYY-MM-DDTHH24:MI:SSZ') AS FLOW_START_TIME\nFROM QUANTAS_AIRLINE_DB.SOURCE.CONTROL_API WHERE IS_ACTIVE;",
         "Normalize Table/Column Names" : "false",
-        "Database Connection Pooling Service" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
+        "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "Fetch Size" : "1",
         "Output Batch Size" : "1",
         "Use Avro Logical Types" : "false",
-        "Record Writer" : "66979c28-9ddb-3d6b-90fc-da3bb40a6b6a",
+        "Record Writer" : "fd1dbcaa-f91d-3d9e-9cf7-5f1655918449",
         "Default Decimal Precision" : "10",
         "Max Rows Per FlowFile" : "1"
       },
@@ -4073,7 +4537,7 @@
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
         "SQL Query" : "${CREATE_RAW_TABLE_SQL}",
-        "Database Connection Pooling Service" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
+        "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "Fetch Size" : "0",
         "Output Batch Size" : "0",
@@ -4395,7 +4859,7 @@
       },
       "properties" : {
         "Max Batch Size" : "1",
-        "Connection Pooling Service" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
+        "Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Max Content Reference Size" : "20 MB",
         "Result Set Output Strategy" : "ROWS_UPDATED",
         "SQL" : "INSERT INTO IDENTIFIER('${DESTINATION_TABLE_NAME}')\n(\n    KEY,\n    PAYLOAD\n)\nSELECT\n    GET_PATH(F.VALUE, '${ARRAY_ID}')::VARCHAR,\n    F.VALUE\nFROM TABLE(\n    FLATTEN(\n        INPUT => GET_PATH(\n            PARSE_JSON('${flowfile_content}'),\n            '${PAYLOAD_ARRAY_NAME}'\n        )\n    )\n) F;"
@@ -5232,7 +5696,7 @@
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
         "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ATTRIBUTES\n)\nWITH GET_COUNT AS\n(\nSELECT\n\tCOUNT(1) AS TBL_COUNT\nFROM ${DESTINATION_TABLE_NAME}\n)\nSELECT \n    '${FLOW_UUID}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP),\n    (CASE WHEN GET_COUNT.TBL_COUNT = ${TOTAL_RECORD_COUNT} THEN TRUE ELSE FALSE END),\n    GET_COUNT.TBL_COUNT,\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))\nFROM GET_COUNT;",
-        "Database Connection Pooling Service" : "cdcd6810-2748-316d-8bb8-f823f66f1731",
+        "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "SQL Post-Query" : "${UPDATE_WATERMARK_SQL}",
         "Fetch Size" : "0",
@@ -5372,6 +5836,6 @@
   "snapshotMetadata" : {
     "author" : "SATVIK_SATVIK",
     "flowIdentifier" : "api-ingestion-pattern",
-    "timestamp" : 1790060796014
+    "timestamp" : 1790074754500
   }
 }
