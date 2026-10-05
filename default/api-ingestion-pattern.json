@@ -148,36 +148,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "8cd8db23-bd92-3af2-0000-000066ce26d4",
-        "name" : "CallAPI",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "327e3403-a57d-3491-0000-000066ce26d4",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "set state fail", "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "cf86b8c5-38ea-322d-0000-000066ce26d4",
-        "name" : "UpdateURL_SetSQLStmt",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 22
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "f8db02d7-10c6-3d07-0000-000066ce26d4",
         "name" : "PopulateAuditLog",
         "type" : "PROCESSOR"
@@ -264,8 +234,8 @@
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
       "bends" : [ {
-        "x" : -774.5071293139274,
-        "y" : -19.638915384973302
+        "x" : -776.0,
+        "y" : 152.0
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
@@ -353,6 +323,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 74
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "b6382055-94ee-3fc0-0000-00001020fc06",
+        "name" : "CreateRawTable",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "6b882e40-3df2-3f30-bab3-2c99b0b770fb",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "cf86b8c5-38ea-322d-0000-000066ce26d4",
+        "name" : "UpdateURL_SetSQLStmt",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 77
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -533,36 +533,6 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 65
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "0ca42cac-65cf-39f5-0000-0000776c8116",
-        "name" : "IsJSON",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "8cd16941-428c-3baa-8575-3bc9040e9b4c",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "4ae8a428-c727-331f-0000-000066ce26d4",
-        "name" : "GetRecordCount",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 71
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -871,6 +841,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "0ca42cac-65cf-39f5-0000-0000776c8116",
+        "name" : "IsJSON",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "cae94622-af06-3d83-9727-fef6b564d6a5",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "4ae8a428-c727-331f-0000-000066ce26d4",
+        "name" : "GetRecordCount",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 76
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "24af9d5b-29f0-3214-0000-000066ce26d4",
         "name" : "RetainRecordCount",
         "type" : "PROCESSOR"
@@ -961,13 +961,13 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "b6382055-94ee-3fc0-0000-00001020fc06",
-        "name" : "CreateRawTable",
+        "id" : "8cd8db23-bd92-3af2-0000-000066ce26d4",
+        "name" : "CallAPI",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "e8bcba6c-7983-3f6e-a4db-9ff9b1330863",
+      "identifier" : "eddc53d8-9a9d-34bb-9f52-2a7d936a4ad6",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -978,11 +978,11 @@
       "source" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "cf86b8c5-38ea-322d-0000-000066ce26d4",
-        "name" : "UpdateURL_SetSQLStmt",
+        "id" : "b6382055-94ee-3fc0-0000-00001020fc06",
+        "name" : "CreateRawTable",
         "type" : "PROCESSOR"
       },
-      "zIndex" : 70
+      "zIndex" : 78
     } ],
     "controllerServices" : [ {
       "bulletinLevel" : "WARN",
@@ -1735,7 +1735,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : 224.0
+        "y" : 408.0
       },
       "properties" : {
         "Routing Strategy" : "Route to 'match' if all match",
@@ -1786,7 +1786,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : 616.0
+        "y" : 800.0
       },
       "properties" : {
         "Routing Strategy" : "Route to 'match' if all match",
@@ -2196,7 +2196,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -528.0,
-        "y" : 416.0
+        "y" : 600.0
       },
       "properties" : {
         "Max Batch Size" : "1",
@@ -2278,7 +2278,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : 24.0
+        "y" : 192.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -2496,7 +2496,7 @@
       "properties" : {
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
-        "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ERROR,\n    ATTRIBUTES\n)\nSELECT \n    '${uuid}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP),\n    FALSE,\n    NULL,\n    COALESCE(NULLIF('${executesql.error.message:replaceAll(\"'\",\"''\")}',''),NULLIF(CONCAT('${invokehttp.java.exception.class:replaceAll(\"'\",\"''\")}',' : ','${invokehttp.java.exception.message:replaceAll(\"'\",\"''\")}'),':'),NULLIF('${error.message:replaceAll(\"'\",\"''\")}','')),\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))",
+        "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ERROR,\n    ATTRIBUTES\n)\nSELECT \n    '${uuid}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    SYSDATE(),\n    FALSE,\n    NULL,\n    COALESCE(NULLIF('${executesql.error.message:replaceAll(\"'\",\"''\")}',''),NULLIF(CONCAT('${invokehttp.java.exception.class:replaceAll(\"'\",\"''\")}',' : ','${invokehttp.java.exception.message:replaceAll(\"'\",\"''\")}'),':'),NULLIF('${error.message:replaceAll(\"'\",\"''\")}','')),\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))",
         "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "Fetch Size" : "0",
@@ -2852,7 +2852,7 @@
       "properties" : {
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
-        "SQL Query" : "SELECT\n    KEY,\n    BASE_URL,\n    COALESCE(WATERMARK,'2026-09-07T00:00:00Z') AS WATERMARK,\n    ADDITIONAL_PARAMS:OFFSET_START::INT AS OFFSET,\n    ADDITIONAL_PARAMS:PAGE_SIZE::INT AS PAGE_SIZE,\n    ADDITIONAL_PARAMS:ARRAY_NAME::STRING AS ARRAY_NAME,\n    ADDITIONAL_PARAMS:ARRAY_ID::STRING AS ARRAY_ID,\n    ADDITIONAL_PARAMS:BATCH_SIZE::INT AS BATCH_SIZE,\n    ADDITIONAL_PARAMS:FILE_FORMAT::STRING AS FILE_FORMAT,\n    ADDITIONAL_PARAMS:DATA_TYPE::STRING AS DATA_TYPE,\n    TO_CHAR(CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP),'YYYY-MM-DDTHH24:MI:SSZ') AS FLOW_START_TIME\nFROM QUANTAS_AIRLINE_DB.SOURCE.CONTROL_API WHERE IS_ACTIVE;",
+        "SQL Query" : "SELECT\n    KEY,\n    BASE_URL,\n    COALESCE(WATERMARK,'2026-09-07T00:00:00Z') AS WATERMARK,\n    ADDITIONAL_PARAMS:OFFSET_START::INT AS OFFSET,\n    ADDITIONAL_PARAMS:PAGE_SIZE::INT AS PAGE_SIZE,\n    ADDITIONAL_PARAMS:ARRAY_NAME::STRING AS ARRAY_NAME,\n    ADDITIONAL_PARAMS:ARRAY_ID::STRING AS ARRAY_ID,\n    ADDITIONAL_PARAMS:BATCH_SIZE::INT AS BATCH_SIZE,\n    ADDITIONAL_PARAMS:FILE_FORMAT::STRING AS FILE_FORMAT,\n    ADDITIONAL_PARAMS:DATA_TYPE::STRING AS DATA_TYPE,\n    TO_CHAR(SYSDATE(),'YYYY-MM-DDTHH24:MI:SSZ') AS FLOW_START_TIME\nFROM QUANTAS_AIRLINE_DB.SOURCE.CONTROL_API WHERE IS_ACTIVE;",
         "Normalize Table/Column Names" : "false",
         "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
@@ -3586,7 +3586,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : -176.0
+        "y" : -8.0
       },
       "properties" : {
         "Request Content-Encoding" : "DISABLED",
@@ -4279,7 +4279,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : 816.0
+        "y" : 1000.0
       },
       "properties" : {
         "Destination" : "flowfile-attribute",
@@ -4512,7 +4512,7 @@
       "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ "failure", "success" ],
+      "autoTerminatedRelationships" : [ "failure" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -4530,8 +4530,8 @@
       "name" : "CreateRawTable",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -304.0,
-        "y" : -544.0
+        "x" : -952.0,
+        "y" : -192.0
       },
       "properties" : {
         "Set Auto Commit" : "true",
@@ -4546,7 +4546,7 @@
         "Normalize Table and Column Names" : "false",
         "Default Decimal Precision" : "10",
         "Max Rows Per FlowFile" : "0",
-        "Content Output Strategy" : "EMPTY"
+        "Content Output Strategy" : "ORIGINAL"
       },
       "propertyDescriptors" : {
         "Set Auto Commit" : {
@@ -4855,7 +4855,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -1400.0,
-        "y" : 416.0
+        "y" : 600.0
       },
       "properties" : {
         "Max Batch Size" : "1",
@@ -4918,7 +4918,7 @@
       "type" : "com.snowflake.openflow.runtime.processors.database.ExecuteSQLStatement",
       "yieldDuration" : "1 sec"
     }, {
-      "autoTerminatedRelationships" : [ ],
+      "autoTerminatedRelationships" : [ "set state fail" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -4941,17 +4941,13 @@
       },
       "properties" : {
         "DESTINATION_TABLE_NAME" : "QUANTAS_AIRLINE_DB.SOURCE.RAW_${KEY}",
-        "CREATE_RAW_TABLE_SQL" : "CREATE TRANSIENT TABLE IF NOT EXISTS QUANTAS_AIRLINE_DB.SOURCE.RAW_${KEY} (KEY VARCHAR(100), PAYLOAD VARIANT, INSERT_DATE TIMESTAMP_LTZ DEFAULT CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP));",
-        "REQUEST_START_TIME" : "${now():format(\"yyyy-MM-dd'T'HH:mm:ss'Z'\", \"GMT\")}",
-        "STAGE_HOUSEKEEPING_SQL" : "COPY FILES INTO @QUANTAS_AIRLINE_DB.SOURCE.API_LANDING/ARCHIVE/${KEY}/ FROM @QUANTAS_AIRLINE_DB.SOURCE.API_LANDING/${KEY}/;\nREMOVE @QUANTAS_AIRLINE_DB.SOURCE.API_LANDING/${KEY};",
-        "COPY_INTO_SQL" : "COPY INTO QUANTAS_AIRLINE_DB.SOURCE.TEMP_RAW_${KEY}(PAYLOAD)\nFROM (\n    SELECT \n        $1\n    FROM @QUANTAS_AIRLINE_DB.SOURCE.API_LANDING/${KEY}/\n)\nFILE_FORMAT = (FORMAT_NAME = '${FILE_FORMAT}');\n",
+        "CREATE_RAW_TABLE_SQL" : "CREATE TRANSIENT TABLE IF NOT EXISTS QUANTAS_AIRLINE_DB.SOURCE.RAW_${KEY} (KEY VARCHAR(100), PAYLOAD VARIANT, INSERT_DATE TIMESTAMP_NTZ DEFAULT SYSDATE());",
+        "HTTP_URL" : "${BASE_URL:evaluateELString()}",
         "Store State" : "Store state locally",
         "UPDATE_WATERMARK_SQL" : "UPDATE QUANTAS_AIRLINE_DB.SOURCE.CONTROL_API SET WATERMARK = '${FLOW_START_TIME}' WHERE KEY = '${KEY}';",
-        "Stateful Variables Initial Value" : "2026-01-01T00:00:00",
-        "INSERT_INTO_SQL" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.RAW_${KEY}\n    (RECORD, HEADER, RECORD_INDEX)\nSELECT\n    f.value,\n    OBJECT_DELETE(r.PAYLOAD, '${PAYLOAD_ARRAY_NAME}'),\n    f.index,\nFROM QUANTAS_AIRLINE_DB.SOURCE.TEMP_RAW_${KEY} r,\nLATERAL FLATTEN(INPUT => r.PAYLOAD:${PAYLOAD_ARRAY_NAME}) f;",
-        "HTTP_URL" : "${BASE_URL:evaluateELString()}",
         "FLOW_UUID" : "${uuid}",
-        "Cache Value Lookup Cache Size" : "100"
+        "Cache Value Lookup Cache Size" : "100",
+        "Stateful Variables Initial Value" : "2026-01-01T00:00:00"
       },
       "propertyDescriptors" : {
         "DESTINATION_TABLE_NAME" : {
@@ -4968,25 +4964,18 @@
           "name" : "CREATE_RAW_TABLE_SQL",
           "sensitive" : false
         },
-        "REQUEST_START_TIME" : {
-          "displayName" : "REQUEST_START_TIME",
+        "HTTP_URL" : {
+          "displayName" : "HTTP_URL",
           "dynamic" : true,
           "identifiesControllerService" : false,
-          "name" : "REQUEST_START_TIME",
+          "name" : "HTTP_URL",
           "sensitive" : false
         },
-        "STAGE_HOUSEKEEPING_SQL" : {
-          "displayName" : "STAGE_HOUSEKEEPING_SQL",
-          "dynamic" : true,
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
           "identifiesControllerService" : false,
-          "name" : "STAGE_HOUSEKEEPING_SQL",
-          "sensitive" : false
-        },
-        "COPY_INTO_SQL" : {
-          "displayName" : "COPY_INTO_SQL",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "COPY_INTO_SQL",
+          "name" : "Delete Attributes Expression",
           "sensitive" : false
         },
         "Store State" : {
@@ -5003,34 +4992,6 @@
           "name" : "UPDATE_WATERMARK_SQL",
           "sensitive" : false
         },
-        "Stateful Variables Initial Value" : {
-          "displayName" : "Stateful Variables Initial Value",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Stateful Variables Initial Value",
-          "sensitive" : false
-        },
-        "INSERT_INTO_SQL" : {
-          "displayName" : "INSERT_INTO_SQL",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "INSERT_INTO_SQL",
-          "sensitive" : false
-        },
-        "HTTP_URL" : {
-          "displayName" : "HTTP_URL",
-          "dynamic" : true,
-          "identifiesControllerService" : false,
-          "name" : "HTTP_URL",
-          "sensitive" : false
-        },
-        "Delete Attributes Expression" : {
-          "displayName" : "Delete Attributes Expression",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Delete Attributes Expression",
-          "sensitive" : false
-        },
         "FLOW_UUID" : {
           "displayName" : "FLOW_UUID",
           "dynamic" : true,
@@ -5043,6 +5004,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "Cache Value Lookup Cache Size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
           "sensitive" : false
         }
       },
@@ -5690,12 +5658,12 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : 1016.0
+        "y" : 1200.0
       },
       "properties" : {
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
-        "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ATTRIBUTES\n)\nWITH GET_COUNT AS\n(\nSELECT\n\tCOUNT(1) AS TBL_COUNT\nFROM ${DESTINATION_TABLE_NAME}\n)\nSELECT \n    '${FLOW_UUID}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    CONVERT_TIMEZONE('America/Los_Angeles', 'UTC', CURRENT_TIMESTAMP),\n    (CASE WHEN GET_COUNT.TBL_COUNT = ${TOTAL_RECORD_COUNT} THEN TRUE ELSE FALSE END),\n    GET_COUNT.TBL_COUNT,\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))\nFROM GET_COUNT;",
+        "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ATTRIBUTES\n)\nWITH GET_COUNT AS\n(\nSELECT\n\tCOUNT(1) AS TBL_COUNT\nFROM ${DESTINATION_TABLE_NAME}\nWHERE INSERT_DATE >= '${FLOW_START_TIME}'\n)\nSELECT \n    '${FLOW_UUID}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    SYSDATE(),\n    (CASE WHEN GET_COUNT.TBL_COUNT = ${TOTAL_RECORD_COUNT} THEN TRUE ELSE FALSE END),\n    GET_COUNT.TBL_COUNT,\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))\nFROM GET_COUNT;",
         "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "SQL Post-Query" : "${UPDATE_WATERMARK_SQL}",
@@ -5836,6 +5804,6 @@
   "snapshotMetadata" : {
     "author" : "SATVIK_SATVIK",
     "flowIdentifier" : "api-ingestion-pattern",
-    "timestamp" : 1791190914724
+    "timestamp" : 1791209908899
   }
 }
