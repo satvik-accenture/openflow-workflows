@@ -989,7 +989,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -997,7 +997,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2026.9.17.2"
+          "version" : "2026.10.1.11"
         },
         "type" : "org.apache.nifi.serialization.RecordReaderFactory"
       } ],
@@ -1134,7 +1134,7 @@
       "bundle" : {
         "artifact" : "runtime-snowflake-connection-service-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -1142,7 +1142,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2026.9.17.2"
+          "version" : "2026.10.1.11"
         },
         "type" : "org.apache.nifi.dbcp.DBCPService"
       } ],
@@ -1158,7 +1158,7 @@
         "Connection Timeout" : "30 seconds",
         "Role" : "QUANTAS_AIRLINE_ADMIN_ROLE",
         "Idle Timeout" : "10 minutes",
-        "Authentication Strategy" : "SNOWFLAKE_SESSION_TOKEN",
+        "Authentication Strategy" : "SNOWFLAKE_MANAGED",
         "Database Name" : "QUANTAS_AIRLINE_DB",
         "Network Timeout" : "5 minutes"
       },
@@ -1276,7 +1276,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -1284,7 +1284,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2026.9.17.2"
+          "version" : "2026.10.1.11"
         },
         "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
       } ],
@@ -1500,7 +1500,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1653,7 +1653,7 @@
       "bundle" : {
         "artifact" : "nifi-groovyx-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1722,7 +1722,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1773,7 +1773,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1824,7 +1824,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1875,7 +1875,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1980,7 +1980,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2183,7 +2183,7 @@
       "bundle" : {
         "artifact" : "runtime-database-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2265,7 +2265,7 @@
       "bundle" : {
         "artifact" : "nifi-scripting-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2338,7 +2338,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2427,7 +2427,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2478,7 +2478,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2631,7 +2631,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2834,7 +2834,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2979,7 +2979,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3134,7 +3134,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-streaming-2-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3338,7 +3338,7 @@
       "bundle" : {
         "artifact" : "runtime-database-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3420,7 +3420,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3573,7 +3573,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3886,7 +3886,7 @@
       "bundle" : {
         "artifact" : "runtime-snowflake-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3992,7 +3992,7 @@
       "bundle" : {
         "artifact" : "nifi-jolt-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4112,7 +4112,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4266,7 +4266,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4355,7 +4355,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4444,7 +4444,7 @@
       "bundle" : {
         "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4518,7 +4518,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4671,7 +4671,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4842,7 +4842,7 @@
       "bundle" : {
         "artifact" : "runtime-database-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4924,7 +4924,7 @@
       "bundle" : {
         "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5062,7 +5062,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5215,7 +5215,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5474,7 +5474,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5677,7 +5677,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.9.21.6"
+        "version" : "2026.10.1.13"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5836,6 +5836,6 @@
   "snapshotMetadata" : {
     "author" : "SATVIK_SATVIK",
     "flowIdentifier" : "api-ingestion-pattern",
-    "timestamp" : 1790074754500
+    "timestamp" : 1791190914724
   }
 }
