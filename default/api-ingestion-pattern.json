@@ -716,7 +716,10 @@
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
+      "bends" : [ {
+        "x" : -1392.0,
+        "y" : -248.0
+      } ],
       "componentType" : "CONNECTION",
       "destination" : {
         "comments" : "",
@@ -989,7 +992,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -997,7 +1000,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2026.10.1.11"
+          "version" : "2026.10.9.8"
         },
         "type" : "org.apache.nifi.serialization.RecordReaderFactory"
       } ],
@@ -1134,7 +1137,7 @@
       "bundle" : {
         "artifact" : "runtime-snowflake-connection-service-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -1142,7 +1145,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2026.10.1.11"
+          "version" : "2026.10.9.8"
         },
         "type" : "org.apache.nifi.dbcp.DBCPService"
       } ],
@@ -1276,7 +1279,7 @@
       "bundle" : {
         "artifact" : "nifi-record-serialization-services-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "CONTROLLER_SERVICE",
@@ -1284,7 +1287,7 @@
         "bundle" : {
           "artifact" : "nifi-standard-services-api-nar",
           "group" : "org.apache.nifi",
-          "version" : "2026.10.1.11"
+          "version" : "2026.10.9.8"
         },
         "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
       } ],
@@ -1488,6 +1491,7 @@
     "maxConcurrentTasks" : 1,
     "name" : "API",
     "outputPorts" : [ ],
+    "parameterContextName" : "EXTERNAL_OPENFLOW_AWS_SM_INTEGRATION.dev/openflow_poc",
     "position" : {
       "x" : 0.0,
       "y" : 0.0
@@ -1500,7 +1504,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1653,7 +1657,7 @@
       "bundle" : {
         "artifact" : "nifi-groovyx-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1722,7 +1726,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1773,7 +1777,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1824,7 +1828,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1875,7 +1879,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -1887,8 +1891,8 @@
       "name" : "RetainRecordCount",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -304.0,
-        "y" : 32.0
+        "x" : -296.0,
+        "y" : 184.0
       },
       "properties" : {
         "Replacement Value" : "CONTROL",
@@ -1980,7 +1984,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2183,7 +2187,7 @@
       "bundle" : {
         "artifact" : "runtime-database-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2203,7 +2207,7 @@
         "Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Max Content Reference Size" : "20 MB",
         "Result Set Output Strategy" : "ROWS_UPDATED",
-        "SQL" : "INSERT INTO IDENTIFIER('${DESTINATION_TABLE_NAME}')\n(\n    KEY,\n    PAYLOAD\n)\nWITH SOURCE_XML AS\n(\n    SELECT PARSE_XML('${flowfile_content}') AS XML_DOC\n),\nPARENT_XML AS\n(\n    SELECT XMLGET(\n        XML_DOC,\n        SPLIT_PART('${PAYLOAD_ARRAY_NAME}', '.', 1)\n    ) AS PARENT_ELEMENT\n    FROM SOURCE_XML\n)\nSELECT\n    GET(\n        XMLGET(\n            F.VALUE,\n            SPLIT_PART('${ARRAY_ID}', '.', 1)\n        ),\n        SPLIT_PART('${ARRAY_ID}', '.', 2)\n    )::VARCHAR AS KEY,\n    F.VALUE AS PAYLOAD\nFROM PARENT_XML,\nLATERAL FLATTEN(\n    INPUT => GET(PARENT_ELEMENT, '$')\n) F\nWHERE GET(F.VALUE, '@')::VARCHAR =\n      SPLIT_PART('${PAYLOAD_ARRAY_NAME}', '.', 2);"
+        "SQL" : "INSERT INTO IDENTIFIER('${DESTINATION_TABLE_NAME}')\n(\n    KEY,\n    PAYLOAD\n)\nWITH SOURCE_XML AS\n(\n    SELECT PARSE_XML('${flowfile_content:replaceAll(\"'\",\"''\")}') AS XML_DOC\n),\nPARENT_XML AS\n(\n    SELECT\n        XML_DOC,\n        XMLGET(XML_DOC, SPLIT_PART('${PAYLOAD_ARRAY_NAME}', '.', 1)) AS PARENT_ELEMENT\n    FROM SOURCE_XML\n),\nRECORDS AS\n(\n    SELECT\n        PARENT_ELEMENT IS NULL AS IS_ROOT,\n        IFF(\n            PARENT_ELEMENT IS NULL,\n            ARRAY_CONSTRUCT(XML_DOC),\n            IFF(\n                IS_ARRAY(GET(PARENT_ELEMENT, '$')),\n                GET(PARENT_ELEMENT, '$'),\n                ARRAY_CONSTRUCT(GET(PARENT_ELEMENT, '$'))\n            )\n        ) AS REC_ARRAY\n    FROM PARENT_XML\n)\nSELECT\n    GET(\n        XMLGET(F.VALUE, SPLIT_PART('${ARRAY_ID}', '.', 1)),\n        SPLIT_PART('${ARRAY_ID}', '.', 2)\n    )::VARCHAR AS KEY,\n    F.VALUE AS PAYLOAD\nFROM RECORDS,\nLATERAL FLATTEN(INPUT => REC_ARRAY) F\nWHERE IS_ROOT\n   OR GET(F.VALUE, '@')::VARCHAR = SPLIT_PART('${PAYLOAD_ARRAY_NAME}', '.', 2);"
       },
       "propertyDescriptors" : {
         "Max Batch Size" : {
@@ -2265,7 +2269,7 @@
       "bundle" : {
         "artifact" : "nifi-scripting-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2278,7 +2282,7 @@
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : -952.0,
-        "y" : 192.0
+        "y" : 184.0
       },
       "properties" : {
         "Script Engine" : "Groovy",
@@ -2338,7 +2342,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2427,7 +2431,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2439,8 +2443,8 @@
       "name" : "IsPaginationRequired",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -304.0,
-        "y" : -184.0
+        "x" : -296.0,
+        "y" : -88.0
       },
       "properties" : {
         "Routing Strategy" : "Route to Property name",
@@ -2478,7 +2482,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2504,6 +2508,7 @@
         "Use Avro Logical Types" : "false",
         "Compression Format" : "NONE",
         "Normalize Table and Column Names" : "false",
+        "SQL Pre-Query" : "CREATE TRANSIENT TABLE IF NOT EXISTS QANTAS_AIRLINE_DB.API.AUDIT_LOG\n(\n    RUN_ID VARCHAR(36),\n    KEY VARCHAR(100),\n    START_TIME TIMESTAMP_NTZ,\n    END_TIME TIMESTAMP_NTZ,\n    IS_SUCCESSFUL BOOLEAN,\n    ROW_COUNT INT,\n    ERROR VARCHAR(5000) DEFAULT NULL,\n    ATTRIBUTES VARIANT,\n    LOG_TIME TIMESTAMP_NTZ DEFAULT SYSDATE()\n);",
         "Default Decimal Precision" : "10",
         "Max Rows Per FlowFile" : "0",
         "Content Output Strategy" : "EMPTY"
@@ -2631,7 +2636,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2834,7 +2839,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -2852,7 +2857,7 @@
       "properties" : {
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
-        "SQL Query" : "SELECT\n    KEY,\n    BASE_URL,\n    COALESCE(WATERMARK,'2026-09-07T00:00:00Z') AS WATERMARK,\n    ADDITIONAL_PARAMS:OFFSET_START::INT AS OFFSET,\n    ADDITIONAL_PARAMS:PAGE_SIZE::INT AS PAGE_SIZE,\n    ADDITIONAL_PARAMS:ARRAY_NAME::STRING AS ARRAY_NAME,\n    ADDITIONAL_PARAMS:ARRAY_ID::STRING AS ARRAY_ID,\n    ADDITIONAL_PARAMS:BATCH_SIZE::INT AS BATCH_SIZE,\n    ADDITIONAL_PARAMS:FILE_FORMAT::STRING AS FILE_FORMAT,\n    ADDITIONAL_PARAMS:DATA_TYPE::STRING AS DATA_TYPE,\n    TO_CHAR(SYSDATE(),'YYYY-MM-DDTHH24:MI:SSZ') AS FLOW_START_TIME\nFROM QUANTAS_AIRLINE_DB.SOURCE.CONTROL_API WHERE IS_ACTIVE;",
+        "SQL Query" : "SELECT\n    KEY,\n    BASE_URL,\n    COALESCE(WATERMARK,'2026-09-07T00:00:00Z') AS WATERMARK,\n    ADDITIONAL_PARAMS:OFFSET_START::INT AS OFFSET,\n    ADDITIONAL_PARAMS:PAGE_SIZE::INT AS PAGE_SIZE,\n    ADDITIONAL_PARAMS:ARRAY_NAME::STRING AS ARRAY_NAME,\n    ADDITIONAL_PARAMS:ARRAY_ID::STRING AS ARRAY_ID,\n    ADDITIONAL_PARAMS:BATCH_SIZE::INT AS BATCH_SIZE,\n    ADDITIONAL_PARAMS:FILE_FORMAT::STRING AS FILE_FORMAT,\n    ADDITIONAL_PARAMS:DATA_TYPE::STRING AS DATA_TYPE,\n    TO_CHAR(SYSDATE(),'YYYY-MM-DDTHH24:MI:SSZ') AS FLOW_START_TIME\nFROM QANTAS_AIRLINE_DB.API.CONTROL_API WHERE IS_ACTIVE;",
         "Normalize Table/Column Names" : "false",
         "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
@@ -2979,7 +2984,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3134,7 +3139,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-streaming-2-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3338,7 +3343,7 @@
       "bundle" : {
         "artifact" : "runtime-database-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3420,7 +3425,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3573,7 +3578,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3886,7 +3891,7 @@
       "bundle" : {
         "artifact" : "runtime-snowflake-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -3992,7 +3997,7 @@
       "bundle" : {
         "artifact" : "nifi-jolt-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4112,7 +4117,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4266,7 +4271,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4355,7 +4360,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4444,7 +4449,7 @@
       "bundle" : {
         "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4456,7 +4461,7 @@
       "name" : "UpdateOffset",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : -304.0,
+        "x" : -296.0,
         "y" : -376.0
       },
       "properties" : {
@@ -4518,7 +4523,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4671,7 +4676,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4842,7 +4847,7 @@
       "bundle" : {
         "artifact" : "runtime-database-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4862,7 +4867,7 @@
         "Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Max Content Reference Size" : "20 MB",
         "Result Set Output Strategy" : "ROWS_UPDATED",
-        "SQL" : "INSERT INTO IDENTIFIER('${DESTINATION_TABLE_NAME}')\n(\n    KEY,\n    PAYLOAD\n)\nSELECT\n    GET_PATH(F.VALUE, '${ARRAY_ID}')::VARCHAR,\n    F.VALUE\nFROM TABLE(\n    FLATTEN(\n        INPUT => GET_PATH(\n            PARSE_JSON('${flowfile_content}'),\n            '${PAYLOAD_ARRAY_NAME}'\n        )\n    )\n) F;"
+        "SQL" : "INSERT INTO IDENTIFIER('${DESTINATION_TABLE_NAME}')\n(\n    KEY,\n    PAYLOAD\n)\nWITH SRC AS (\n    SELECT PARSE_JSON('${flowfile_content}') AS DOC\n)\nSELECT\n    GET_PATH(F.VALUE, '${ARRAY_ID}')::VARCHAR,\n    F.VALUE\nFROM SRC,\nLATERAL FLATTEN(\n    INPUT => IFF(\n        IS_ARRAY(GET_PATH(SRC.DOC, '${PAYLOAD_ARRAY_NAME}')),\n        GET_PATH(SRC.DOC, '${PAYLOAD_ARRAY_NAME}'),\n        ARRAY_CONSTRUCT(SRC.DOC)\n    )\n) F;"
       },
       "propertyDescriptors" : {
         "Max Batch Size" : {
@@ -4924,7 +4929,7 @@
       "bundle" : {
         "artifact" : "nifi-update-attribute-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -4940,11 +4945,11 @@
         "y" : -376.0
       },
       "properties" : {
-        "DESTINATION_TABLE_NAME" : "QUANTAS_AIRLINE_DB.SOURCE.RAW_${KEY}",
-        "CREATE_RAW_TABLE_SQL" : "CREATE TRANSIENT TABLE IF NOT EXISTS QUANTAS_AIRLINE_DB.SOURCE.RAW_${KEY} (KEY VARCHAR(100), PAYLOAD VARIANT, INSERT_DATE TIMESTAMP_NTZ DEFAULT SYSDATE());",
+        "DESTINATION_TABLE_NAME" : "QANTAS_AIRLINE_DB.API.RAW_${KEY}",
+        "CREATE_RAW_TABLE_SQL" : "CREATE TRANSIENT TABLE IF NOT EXISTS QANTAS_AIRLINE_DB.API.RAW_${KEY} (KEY VARCHAR(100), PAYLOAD VARIANT, INSERT_DATE TIMESTAMP_NTZ DEFAULT SYSDATE());",
         "HTTP_URL" : "${BASE_URL:evaluateELString()}",
         "Store State" : "Store state locally",
-        "UPDATE_WATERMARK_SQL" : "UPDATE QUANTAS_AIRLINE_DB.SOURCE.CONTROL_API SET WATERMARK = '${FLOW_START_TIME}' WHERE KEY = '${KEY}';",
+        "UPDATE_WATERMARK_SQL" : "UPDATE QANTAS_AIRLINE_DB.API.CONTROL_API SET WATERMARK = '${FLOW_START_TIME}' WHERE KEY = '${KEY}';",
         "FLOW_UUID" : "${uuid}",
         "Cache Value Lookup Cache Size" : "100",
         "Stateful Variables Initial Value" : "2026-01-01T00:00:00"
@@ -5030,7 +5035,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5183,7 +5188,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5442,7 +5447,7 @@
       "bundle" : {
         "artifact" : "runtime-snowpipe-processors-nar",
         "group" : "com.snowflake.openflow.runtime",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5645,7 +5650,7 @@
       "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
-        "version" : "2026.10.1.13"
+        "version" : "2026.10.6.14"
       },
       "comments" : "",
       "componentType" : "PROCESSOR",
@@ -5663,7 +5668,7 @@
       "properties" : {
         "Set Auto Commit" : "true",
         "Max Wait Time" : "0 seconds",
-        "SQL Query" : "INSERT INTO QUANTAS_AIRLINE_DB.SOURCE.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ATTRIBUTES\n)\nWITH GET_COUNT AS\n(\nSELECT\n\tCOUNT(1) AS TBL_COUNT\nFROM ${DESTINATION_TABLE_NAME}\nWHERE INSERT_DATE >= '${FLOW_START_TIME}'\n)\nSELECT \n    '${FLOW_UUID}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    SYSDATE(),\n    (CASE WHEN GET_COUNT.TBL_COUNT = ${TOTAL_RECORD_COUNT} THEN TRUE ELSE FALSE END),\n    GET_COUNT.TBL_COUNT,\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))\nFROM GET_COUNT;",
+        "SQL Query" : "INSERT INTO QANTAS_AIRLINE_DB.API.AUDIT_LOG\n(\n    RUN_ID,\n    KEY,\n    START_TIME,\n    END_TIME,\n    IS_SUCCESSFUL,\n    ROW_COUNT,\n    ATTRIBUTES\n)\nWITH GET_COUNT AS\n(\nSELECT\n\tCOUNT(1) AS TBL_COUNT\nFROM ${DESTINATION_TABLE_NAME}\nWHERE INSERT_DATE >= '${FLOW_START_TIME}'\n)\nSELECT \n    '${FLOW_UUID}',\n    '${KEY}',\n    '${FLOW_START_TIME}',\n    SYSDATE(),\n    (CASE WHEN GET_COUNT.TBL_COUNT = ${TOTAL_RECORD_COUNT} THEN TRUE ELSE FALSE END),\n    GET_COUNT.TBL_COUNT,\n    PARSE_JSON(REPLACE('${JSONAttributes:replaceAll(\"'\",\"''\")}','\\n','\\\\n'))\nFROM GET_COUNT;",
         "Database Connection Pooling Service" : "b2d8debe-7ba6-3baf-bd54-1733a1703ba8",
         "Default Decimal Scale" : "0",
         "SQL Post-Query" : "${UPDATE_WATERMARK_SQL}",
@@ -5672,6 +5677,7 @@
         "Use Avro Logical Types" : "false",
         "Compression Format" : "NONE",
         "Normalize Table and Column Names" : "false",
+        "SQL Pre-Query" : "CREATE TRANSIENT TABLE IF NOT EXISTS QANTAS_AIRLINE_DB.API.AUDIT_LOG\n(\n    RUN_ID VARCHAR(36),\n    KEY VARCHAR(100),\n    START_TIME TIMESTAMP_NTZ,\n    END_TIME TIMESTAMP_NTZ,\n    IS_SUCCESSFUL BOOLEAN,\n    ROW_COUNT INT,\n    ERROR VARCHAR(5000) DEFAULT NULL,\n    ATTRIBUTES VARIANT,\n    LOG_TIME TIMESTAMP_NTZ DEFAULT SYSDATE()\n);",
         "Default Decimal Precision" : "10",
         "Max Rows Per FlowFile" : "0",
         "Content Output Strategy" : "EMPTY"
@@ -5799,11 +5805,37 @@
   },
   "flowEncodingVersion" : "1.0",
   "latest" : false,
-  "parameterContexts" : { },
-  "parameterProviders" : { },
+  "parameterContexts" : {
+    "EXTERNAL_OPENFLOW_AWS_SM_INTEGRATION.dev/openflow_poc" : {
+      "componentType" : "PARAMETER_CONTEXT",
+      "inheritedParameterContexts" : [ ],
+      "name" : "EXTERNAL_OPENFLOW_AWS_SM_INTEGRATION.dev/openflow_poc",
+      "parameterGroupName" : "EXTERNAL_OPENFLOW_AWS_SM_INTEGRATION.dev/openflow_poc",
+      "parameterProvider" : "65e72d9f-01a0-1000-ffff-ffffa8bcdd5a",
+      "parameters" : [ {
+        "name" : "open_weather_api_key",
+        "provided" : true,
+        "sensitive" : false,
+        "value" : "bad10d30b9d455a29944b04be32447bf"
+      } ],
+      "synchronized" : true
+    }
+  },
+  "parameterProviders" : {
+    "65e72d9f-01a0-1000-ffff-ffffa8bcdd5a" : {
+      "bundle" : {
+        "artifact" : "runtime-snowflake-parameter-provider-nar",
+        "group" : "com.snowflake.openflow.runtime",
+        "version" : "2026.10.6.14"
+      },
+      "identifier" : "65e72d9f-01a0-1000-ffff-ffffa8bcdd5a",
+      "name" : "Openflow - Snowflake Parameter Provider",
+      "type" : "com.snowflake.openflow.runtime.parameter.snowflake.SnowflakeParameterProvider"
+    }
+  },
   "snapshotMetadata" : {
     "author" : "SATVIK_SATVIK",
     "flowIdentifier" : "api-ingestion-pattern",
-    "timestamp" : 1791209908899
+    "timestamp" : 1791805699278
   }
 }
